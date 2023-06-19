@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title> Student Form</title>
+    <style>
+        div.center {
+            text-align: center;
+        }
+        div.center table {
+            margin: 0 auto !important;
+            text-align: left !important;
+        }
+    </style>
+</head>
+<body>
+<div class="center"><h1> Add New Student</h1>
+    <form action="saveServlet" method="post">
+        <div class="center">
+            <table>
+                <tr><td>Name:</td><td><input type="text" name="Username"/></td></tr>
+                <tr><td>Password:</td><td><input type="password" name="Password"/></td></tr>
+                <tr><td>Email:</td><td><input type="email" name="Email"/></td></tr>
+                <tr><td colspan="2"><input type="submit" value="Save Student"/></td></tr>
+            </table>
+        </div>
+    </form>
+    <br/>
+    <button><a href="viewServlet">View Students</a></button>
+</div>
+</body>
+</html>
